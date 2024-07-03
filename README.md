@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @ninjaclaw
+- 👋 Hi, I’m @nixsh
 - 🌱 I’m currently learning Web Development
 - 📫 Reach me via [Linkedin](https://www.linkedin.com/in/nixshnt/)
 - 😄 Pronouns: he/him
