@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @nixsh
 - 🌱 I’m currently learning Web Development
-- 📫 Reach me via [Linkedin](https://www.linkedin.com/in/nixshnt/) or [Instagram](https://www.instagram.com/callmenixsh)
+- 📫 Reach me via [Linkedin](https://www.linkedin.com/in/callmenixsh/) or [Instagram](https://www.instagram.com/callmenixsh)
 - 😄 Pronouns: he/him
 
 <!---
