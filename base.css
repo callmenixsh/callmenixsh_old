@@ -39,12 +39,24 @@ header {
 	transition: all 0.2s;
 }
 
+#sidebar a{
+	text-decoration: none;
+	color: rgb(0, 251, 0);
+
+}
+
 #Declare {
 	display: flex;
 	justify-content: center;
 	font-size: 10px;
 	font-style: italic;
 	margin-top: 10px;
+}
+
+#buggy {
+	font-family: monospace;
+	color: red;
+	margin-top: 30px ;
 }
 
 /* sidebar content  */
@@ -99,7 +111,6 @@ header {
 #sidebar a{
 	text-decoration: none;
 	color: rgb(0, 251, 0);
-
 }
 
 /* Other Pages */
@@ -112,6 +123,7 @@ header {
 
 .pages ul {
 	display: flex;
+	position: absolute;
 }
 
 .pages ul li {

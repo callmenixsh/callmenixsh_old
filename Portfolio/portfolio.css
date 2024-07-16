@@ -1,0 +1,16 @@
+/* Styling for the about element */
+#portfolio {
+    border-bottom: 3px rgb(158, 158, 205) solid;
+    display: inline-block; 
+}
+
+/* Apply the animation */
+#portfolio {
+    animation: nav .2s forwards;
+    transition: transform .5s; 
+}
+
+#portfolio li {
+    color: rgb(158, 158, 205);
+    transition: color .5s; 
+}
