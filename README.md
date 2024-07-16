@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @nixsh
-- 🌱 I’m currently learning Web Development
+- 🌱 I’m currently learning Web Development and DSA
 - 📫 Reach me via [Linkedin](https://www.linkedin.com/in/callmenixsh/) or [Instagram](https://www.instagram.com/callmenixsh)
 - 😄 Pronouns: he/him
 
