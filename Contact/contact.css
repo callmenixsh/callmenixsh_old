@@ -1,16 +1,6 @@
-/* Styling for the about element */
 #contact {
-    border-bottom: 3px rgb(158, 158, 205) solid;
-    display: inline-block; 
-}
-
-/* Apply the animation */
-#contact {
+    border-bottom: 3.5px rgb(158, 158, 205) solid;
+    display: inline-block;
     animation: nav .2s forwards;
     transition: transform .5s; 
-}
-
-#contact li {
-    color: rgb(158, 158, 205);
-    transition: color .5s; 
 }
