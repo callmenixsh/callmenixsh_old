@@ -7,7 +7,6 @@ window.addEventListener('scroll', function() {
         scrollToTopBtn.classList.remove('show');
     }
 });
-
 function scrollToTop() {
     window.scrollTo({
         top: 0,
