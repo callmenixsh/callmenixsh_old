@@ -1,23 +1,27 @@
 body {
-    background-color: rgb(34, 39, 46);
-    color: rgb(211, 203, 203);
-    font-family: "Ubuntu", sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+	background-color: rgb(34, 39, 46);
+	color: rgb(211, 203, 203);
+	font-family: "Ubuntu", sans-serif;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
 }
 
 header {
 	z-index: 100;
+	width: 100%;
 }
 
-main{
+main {
 	padding-top: 90px;
 	flex: 1;
+	width: 100%;
 }
 
-/* sidebar button  */
 .menu-toggle {
 	all: unset;
 	transform: scale(2);
@@ -27,67 +31,64 @@ main{
 	right: 50px;
 	color: white;
 }
+
 .sidebar-container:hover #sidebar,
 #sidebar:hover {
 	right: 0px;
 	transition: all 0.4s;
 }
-#sidebar a{
+
+#sidebar a {
 	text-decoration: none;
 	color: rgb(0, 251, 0);
 }
 
-/* Sidebar base */
 #sidebar {
-    position: fixed;
-    top: 0;
-    right: -60%;
-    height: 100vh; /* Set height to 100% of the viewport height */
-    width: 40%;
-    background-color: rgba(16, 17, 25, 0.929);
-    padding: 50px 30px 30px 30px;
-    border-left: rgba(255, 255, 255, 0.353) 1px solid;
-    transition: all 0.2s;
-    overflow-y: auto; /* Enable vertical scrolling */
+	position: fixed;
+	top: 0;
+	right: -800px;
+	height: 100%;
+	width: 400px;
+	background-color: rgba(16, 17, 25, 0.929);
+	padding: 50px 50px 30px 50px;
+	border-left: rgba(255, 255, 255, 0.353) 1px solid;
+	transition: all 0.2s;
+	overflow-y: auto;
 }
 
-/* Customize the sidebar scrollbar */
 #sidebar::-webkit-scrollbar {
-    width: 8px;
+	width: 8px;
 }
 
 #sidebar::-webkit-scrollbar-thumb {
-    background-color: #8888881b;
-    border-radius: 6px;
+	background-color: #8888881b;
+	border-radius: 6px;
 }
 
 #sidebar::-webkit-scrollbar-thumb:hover {
-    background-color: #55555563;
+	background-color: #55555563;
 }
 
 #sidebar::-webkit-scrollbar-track {
-    background: #f1f1f100;
+	background: #f1f1f100;
 }
-
 
 #Declare {
 	display: flex;
 	justify-content: center;
 	font-size: 16px;
 	font-style: italic;
-	margin-top: 10px;
+	margin-top: 100px;
 }
 
 #buggy {
 	font-family: monospace;
 	color: red;
-	margin-top: 30px ;
+	margin-top: 30px;
 }
 
-/* sidebar content  */
-
 .socials {
-	padding-top: 50px;
+	padding-top: 70px;
 	text-align: center;
 }
 
@@ -95,7 +96,7 @@ main{
 	all: unset;
 	position: relative;
 	display: flex;
-    list-style-type: none;
+	list-style-type: none;
 	gap: 50px;
 	padding: 10px 0px;
 	align-items: center;
@@ -107,17 +108,16 @@ main{
 	height: 30px;
 }
 
-/* Menu  */
 #menu {
 	display: flex;
 	align-items: center;
-	background-color: rgb(31, 33, 40);
-	padding: 0 10%;
+	background-color: rgb(33, 38, 57);
 	height: 90px;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.141);
+	justify-content: center;
 }
 
 #menu a {
@@ -126,18 +126,17 @@ main{
 	padding: 0 20px;
 	margin: 3px;
 	transition: color 0.5s, border-bottom-color 0.5s;
+	font-weight: bold;
 }
 
 #menu a:hover {
 	cursor: pointer;
-	color: rgb(158, 158, 205);
+	color: rgb(0, 255, 213);
 }
 
-
-/* Other Pages */
 .pages {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 	width: 55%;
 }
@@ -145,6 +144,7 @@ main{
 .pages ul {
 	display: flex;
 	position: absolute;
+	padding-inline-start: 0px;
 }
 
 .pages ul li {
@@ -164,7 +164,7 @@ main{
 	left: 0;
 	width: 0;
 	height: 2px;
-	background-color: rgb(158, 158, 205);
+	background-color: rgb(0, 255, 195);
 	transition: width 0.6s ease-in-out;
 }
 
@@ -172,49 +172,12 @@ main{
 	width: 100%;
 }
 
-/* Add this to make the menu responsive */
-@media (max-width: 800px) {
-    #menu {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .home {
-        width: 100%;
-        text-align: center;
-    }
-
-    .pages {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .pages ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .pages ul li {
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.141);
-        padding: 10px 0;
-    }
-
-    .pages ul li::before {
-        display: none;
-    }
-}
-
-/* Name animaetion */
 .name-container {
 	position: relative;
 	width: 240px;
 	height: 50px;
 	overflow: hidden;
+	margin: 0 auto; /* Center the container */
 }
 
 .name-container span {
@@ -238,7 +201,6 @@ main{
 	animation-delay: 2s;
 }
 
-/* Text swap */
 @keyframes swap {
 	0% {
 		opacity: 0;
@@ -255,7 +217,14 @@ main{
 	}
 }
 
-/* Footer styling */
+@media screen and (max-width: 1000px) {
+	#menu {
+		flex-direction: column;
+		height: 150px;
+		padding-top: -10px;
+	}
+}
+
 .footer {
 	background-color: rgb(31, 33, 40);
 	color: rgb(211, 203, 203);
@@ -270,8 +239,8 @@ main{
 	color: white;
 }
 
-.footer a:hover{
-	color: rgb(187, 144, 235);;
+.footer a:hover {
+	color: rgb(187, 144, 235);
 }
 
 .footer-content {
@@ -279,6 +248,10 @@ main{
 	justify-content: center;
 	padding: 0 10px;
 	gap: 120px;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .footer ul {
@@ -295,17 +268,16 @@ main{
 	gap: 10px;
 }
 
-/* quick links  */
 .links-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 40px;
-    row-gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	column-gap: 40px;
+	row-gap: 10px;
 }
 
 .links-grid .links {
 	justify-self: center;
-    margin: 0;
+	margin: 0;
 }
 
 .footer-bottom {
@@ -313,7 +285,10 @@ main{
 	margin-top: 20px;
 }
 
-/* scrollbar  */
+.footer-bottom img {
+	width: 50px;
+}
+
 ::-webkit-scrollbar {
 	width: 8px;
 	height: 8px;
@@ -336,7 +311,6 @@ main{
 	background: transparent;
 }
 
-/* top button  */
 #scrollToTopBtn {
 	position: fixed;
 	bottom: 20px;
@@ -364,40 +338,18 @@ main{
 	display: block;
 }
 
-/* zoom warning */
-.zoomed-in-warning::after {
-	content: "Zoom out to view this site properly !!";
-	position: fixed;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	top: 0px;
-	height: 100%;
-	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.665);
-	color: rgb(255, 0, 0);
-	text-shadow: 2px 2px 20px rgb(247, 0, 0);
-	width: 100%;
-	font-size: 50px;
-	z-index: 1000;
-	text-align: center;
+.mirror {
+	transform: scaleX(-1);
 }
 
-.zoomed-out-warning::after {
-	content: "Zoom in to view this site properly !!";
-	position: fixed;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	top: 0px;
-	height: 100%;
-	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.665);
-	color: rgb(255, 0, 0);
-	text-shadow: 2px 2px 20px rgb(247, 0, 0);
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	padding: 20px;
+	max-width: 1200px;
 	width: 100%;
-	font-size: 150px;
-	z-index: 1000;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -408,4 +360,10 @@ main{
 	justify-content: center;
 	align-items: center;
 	color: rgb(136, 136, 68);
+	height: 900px;
+	font-size: 2rem;
+}
+
+#maintainance img {
+	height: 400px;
 }
