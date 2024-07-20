@@ -8,6 +8,7 @@
     height: 900px;
     box-shadow: 0px 5px black;
     overflow: hidden;
+	min-width: 100%;
 }
 
 .firstleft {
@@ -39,10 +40,6 @@
     animation: fadeinbottom 2s 1 forwards;
 }
 
-.teal {
-	color: rgb(12, 231, 176);
-}
-
 /* typing animation */
 .typing {
 	border-right: 0.1em solid #00ffab;
@@ -68,7 +65,7 @@
 	}
 }
 
-/* get started button  */
+/* Get started button  */
 .navbtn {
 	display: flex;
 	align-items: center;

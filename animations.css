@@ -60,3 +60,14 @@
         transform: translate(0);
     }
 }
+@keyframes colorshift {
+    0% {
+        filter: drop-shadow(2px 2px 6px rgb(0, 255, 140));
+        transition: all .3s;
+    }
+    100%{
+        filter: drop-shadow(2px 2px 5px rgb(172, 57, 255));
+        transition: all .3s;
+    }
+}
+

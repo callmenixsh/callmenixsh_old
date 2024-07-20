@@ -1,4 +1,11 @@
-// typing animation for start
+//sidebar toggle
+function toggleSidebar() {
+    let sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle('showsidebar');
+    sidebar.classList.toggle('hidesidebar');
+}
+
+// typing animation
 const roles = [
     "Web Developer", 
     "Graphic Designer", 
@@ -48,3 +55,5 @@ function scrollToAbt() {
     });
 }
 
+
+//
