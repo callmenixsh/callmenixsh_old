@@ -1,10 +1,3 @@
-//sidebar toggle
-function toggleSidebar() {
-    let sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle('showsidebar');
-    sidebar.classList.toggle('hidesidebar');
-}
-
 // typing animation
 const roles = [
     "Web Developer", 
@@ -45,15 +38,22 @@ function deleteText() {
 document.addEventListener('DOMContentLoaded', (event) => {
     setTimeout(type, initialDelay);
 });
-
-//scroll button
+ 
+//scroll button to a bout
 const scrollToAbtBtn = document.getElementById('scrollToAbout');
 function scrollToAbt() {
     window.scrollTo({
-        top: 900,
+        top: 905,
         behavior: 'smooth'
     });
 }
 
 
-//
+//scroll to portfolio section
+const scrollToProBtn = document.getElementById('scrollToProfile');
+function scrollToPro() {
+    window.scrollTo({
+        top: 1805,
+        behavior: 'smooth'
+    });
+}

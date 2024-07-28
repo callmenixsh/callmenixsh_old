@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="./index.css" />
 	</head>
 	<body>
-		<!-- header -->
+		<!-- header stuff -->
 		<header>
 			<div id="menu" class="txtshadow">
 				<div class="navbar">
@@ -118,12 +118,35 @@
 							<span class="teal typing bold"></span>
 						</div>
 					</text>
-					<button class="navbtn" onclick="scrollToAbt()">
+					<button class="navbtn fbtn" onclick="scrollToAbt()">
 						About me<img src="1images/click.png" />
 					</button>
 				</div>
 				<div class="firstright">
 					<img src="./1images/me.png" />
+				</div>
+			</section>
+
+			<section class="secondsection sections">
+				<div class="secondcontainer">
+					<div id="abouticon"><img src="./1images/favicon.png" /></div>
+					<div id="aboutdesc">
+						<div id="abouthead" class="heading mid">ABOUT ME</div>
+						<div class="desc">
+							Hey, I'm Nishant, a 3rd-year engineering student (5th semester)
+							with a passion for web development, graphic design, and
+							programming.
+							<br />
+							I'm skilled in C++, Java, HTML, CSS, and JavaScript, and currently
+							diving into MERN stack. I also have experience with a lot of
+							softwares which you can check out below
+						</div>
+						<button class="navbtn sbtn shadowed">Learn More</button>
+					</div>
+				</div>
+
+				<div class="down" onclick="scrollToPro()">
+					<img id="scrollToProfile" src="./1images/scroll.png" />
 				</div>
 			</section>
 
@@ -135,15 +158,6 @@
 					alt="Website under construction image"
 				/>
 			</div>
-
-			<!-- 				
-				<section class="secondsection sections">
-					<div class="secondleft">
-					</div>
-					<div class="secondright">
-					</div>
-				</section>
-				<div class="down" onclick="scrollToPro()"><img id="scrollToProfile" src="./1images/scroll.png"></div> -->
 		</main>
 
 		<!-- footer stuff -->
@@ -154,81 +168,80 @@
 			<div class="footer-content txtshadow">
 				<div class="footer-col">
 					<div class="links-flex">
-					<div class="footerhead ">QUICK LINKS</div>
+						<div class="footerhead">QUICK LINKS</div>
 
 						<ul class="links-grid">
 							<li class="links">
 								<a href="https://callmenixsh.github.io/callmenixsh/index.html"
-								>Home</a
+									>Home</a
 								>
 							</li>
 							<li class="links">
 								<a
-								href="https://callmenixsh.github.io/callmenixsh/About/about.html"
-								>About</a
-								>
-							</li>
-							<li class="links">
-								<a href="https://callmenixsh.github.io/callmenixsh/Logs/logs.html"
-								>Logs</a
+									href="https://callmenixsh.github.io/callmenixsh/About/about.html"
+									>About</a
 								>
 							</li>
 							<li class="links">
 								<a
-								href="https://callmenixsh.github.io/callmenixsh/Contact/contact.html"
-								>Contact</a
+									href="https://callmenixsh.github.io/callmenixsh/Logs/logs.html"
+									>Logs</a
 								>
 							</li>
 							<li class="links">
 								<a
-								href="https://callmenixsh.github.io/callmenixsh/Portfolio/portfolio.html"
-								>Portfolio</a
+									href="https://callmenixsh.github.io/callmenixsh/Contact/contact.html"
+									>Contact</a
+								>
+							</li>
+							<li class="links">
+								<a
+									href="https://callmenixsh.github.io/callmenixsh/Portfolio/portfolio.html"
+									>Portfolio</a
 								>
 							</li>
 							<li class="links">
 								<a href="https://callmenixsh.github.io/Hajime/index.html"
-								>Projects</a
+									>Projects</a
 								>
-						</li>
-						<li class="links">
-							<a
-							href="https://callmenixsh.github.io/callmenixsh/Portfolio/portfolio.html"
-							>Profiles</a
-							>
-						</li>
-						<li class="links">
-							<a
-							href="https://callmenixsh.github.io/callmenixsh/Resources/resources.html"
-							>Resources</a
-							>
-						</li>
-					</ul>
+							</li>
+							<li class="links">
+								<a
+									href="https://callmenixsh.github.io/callmenixsh/Portfolio/portfolio.html"
+									>Profiles</a
+								>
+							</li>
+							<li class="links">
+								<a
+									href="https://callmenixsh.github.io/callmenixsh/Resources/resources.html"
+									>Resources</a
+								>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
 				<div id="socialz" class="footer-col">
 					<div class="footerhead txtshadow">CONTACT</div>
 					<a href="mailto:callmenixsh@example.com">callmenixsh@gmail.com</a>
 					<ul>
 						<li>
 							<a href="https://github.com/callmenixsh" target="_blank"
-							><img id="github" src="./1images/github.png"
+								><img id="github" src="./1images/github.png"
 							/></a>
 						</li>
 						<li>
-							<a
-							href="https://linkedin.com/in/callmenixsh"
-							target="_blank"
-							><img id="linkedin" src="./1images/linkedin.png"
+							<a href="https://linkedin.com/in/callmenixsh" target="_blank"
+								><img id="linkedin" src="./1images/linkedin.png"
 							/></a>
 						</li>
 						<li>
 							<a href="https://x.com/callmenixsh" target="_blank"
-							><img id="twitter" src="./1images/x.png"
+								><img id="twitter" src="./1images/x.png"
 							/></a>
 						</li>
 						<li>
 							<a href="https://instagram.com/callmenixsh" target="_blank"
-							><img id="instagram" src="./1images/instagram.png"
+								><img id="instagram" src="./1images/instagram.png"
 							/></a>
 						</li>
 					</ul>
@@ -239,7 +252,7 @@
 				<p>&copy; 2024 callmenixsh. All rights reserved.</p>
 			</div>
 		</footer>
-		<script src="./top.js"></script>
+		<script src="./base.js"></script>
 		<script src="./index.js"></script>
 	</body>
 </html>

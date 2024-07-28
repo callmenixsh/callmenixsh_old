@@ -76,6 +76,10 @@ table {
 	filter: invert();
 }
 
+.shadowed{
+	box-shadow: 2px 2px 1px black;
+}
+
 
 /* actual code  */
 * {
@@ -186,7 +190,7 @@ main {
 }
 
 .hidesidebar {
-	left: -600px;
+	left: -1500px;
 }
 
 .showsidebar {
@@ -339,7 +343,7 @@ main {
 	display: flex;
 	align-items: center;
 	padding: 0 10px;
-	height: 80px;
+	height: 70px;
 	position: relative;
 }
 
@@ -506,13 +510,13 @@ main {
 
 #scrollToTopBtn {
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	bottom: 2em;
+	right: 2em;
 	background-color: #00000020;
 	color: white;
 	border: none;
-	width: 30px;
-	height: 40px;
+	width: 3em;
+	height: 4em;
 	margin-top: 10px;
 	padding: 1% 1% 1% 1%;
 	cursor: pointer;
@@ -534,9 +538,14 @@ main {
 @media screen and (max-width: 1000px) {
 	#menu {
 		flex-direction: column;
-		height: 150px;
+		height: 6.2em;
 		padding-top: -10px;
 	}
+
+	#menu a{
+		padding: 0em;
+	}
+
 	.navbar {
 		display: flex;
 		width: 100%;
@@ -544,6 +553,23 @@ main {
 
 	.navbar > .home {
 		flex: 1;
+	}
+
+	#sidebar-open img, #sidebar-close img{
+		width: 15px;
+		height: auto;
+	}
+
+	#sidebar{
+		width: 100%;
+	}
+
+	.name{
+		font-size: 1.5em;
+	}
+
+	.pages ul li{
+		height: 30px;
 	}
 
 	.footer{
@@ -558,8 +584,6 @@ main {
 		font-size: 15px;
 		row-gap: 5px;
 		column-gap: 3px;
-		width: 50%;
-		justify-content: center;
 		align-items: center;
 	}
 
@@ -568,10 +592,6 @@ main {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.socials img{
-		gap: 10%;
 	}
 }
 
