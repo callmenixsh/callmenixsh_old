@@ -4,7 +4,7 @@
 
 /* first section part  */
 .firstsection {
-	background-image: url(/1images/graphic3.png);
+	background-image: url(./1images/graphic3.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -150,7 +150,7 @@
 /* second section part */
 
 .secondsection {
-	background-image: url(/1images/graphic1.png);
+	background-image: url(./1images/graphic1.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
