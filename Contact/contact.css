@@ -1,6 +1,5 @@
 #contact {
-    border-bottom: 3.5px rgb(158, 158, 205) solid;
+    border-bottom: 5px rgba(0, 255, 200, 0.848) solid;
     display: inline-block;
-    animation: nav .2s forwards;
-    transition: transform .5s; 
+    animation: nav .5s .25s forwards;
 }

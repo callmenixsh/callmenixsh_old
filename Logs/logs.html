@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Nishant's Portfolio</title>
+		<title>callmeNiXsh | Logs</title>
 		<link rel="icon" href="../1images/favicon.png" type="image/png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,84 +13,101 @@
 		/>
 		<link rel="stylesheet" href="../base.css" />
 		<link rel="stylesheet" href="../animations.css" />
-		<link rel="stylesheet" href="../index.css" />
+		<link rel="stylesheet" href="./logs.css" />
 	</head>
 	<body>
+		<!-- header stuff -->
 		<header>
-			<div id="menu">
-				<div class="home">
-					<a href="../index.html">
-						<h1>
-							<div class="name-container">
-								<span class="name first">Nɪsʜᴀɴᴛ</span>
-								<span class="name second">@callmenixsh</span>
+			<div id="menu" class="txtshadow">
+				<div class="navbar">
+					<div class="sidebar-container">
+						<div id="sidebar-open" onclick="toggleSidebar()">
+							<img class="invert icon" src="../1images/sidebar.png" />
+						</div>
+						<div id="sidebar" class="hidesidebar">
+							<div id="sidebar-close" onclick="toggleSidebar()">
+								<img class="invert icon" src="../1images/close.png" />
 							</div>
-						</h1>
-					</a>
+							<p class="heading aqua mid bold">Welcome to my portfolio!</p>
+							<p class="desc">
+								Discover my skills, learn more about me, and explore my full
+								portfolio. You can view a comprehensive list of all my projects,
+								find my contact information, download my resume, and connect
+								with me on social media. Check out my DSA profiles and see the
+								breadth of my expertise in coding and development.
+							</p>
+							<div id="lawgs">
+								I log my major portfolio updates here
+								<a href="../Logs/logs.html"><p class="teal">LOGS</p></a>
+							</div>
+
+							<div class="socials bold">
+								SOCIALS
+								<ul>
+									<li>
+										<a href="https://github.com/callmenixsh" target="_blank"
+											><img id="github" src="../1images/github.png"
+										/></a>
+									</li>
+									<li>
+										<a
+											href="https://linkedin.com/in/callmenixsh"
+											target="_blank"
+											><img id="linkedin" src="../1images/linkedin.png"
+										/></a>
+									</li>
+									<li>
+										<a href="https://x.com/callmenixsh" target="_blank"
+											><img id="twitter" src="../1images/x.png"
+										/></a>
+									</li>
+									<li>
+										<a href="https://instagram.com/callmenixsh" target="_blank"
+											><img id="instagram" src="../1images/instagram.png"
+										/></a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="claim italics mid">
+								* I built this site myself purely from scratch *
+							</div>
+							<div class="mid alert">
+								<br />
+								The site is under development and may contain bugs !!<br />
+								If you find any please report at any of my socials
+							</div>
+						</div>
+					</div>
+					<div class="home">
+						<a href="../index.html">
+							<h1>
+								<div class="name-container">
+									<span class="name first">Nɪsʜᴀɴᴛ</span>
+									<span class="name second">@callmenixsh</span>
+								</div>
+							</h1>
+						</a>
+					</div>
 				</div>
 				<div class="pages">
 					<ul>
-						<a href="../About/about.html" id="about">
-							<li>ABOUT</li>
-						</a>
-						<a href="../Portfolio/portfolio.html" id="portfolio">
-							<li>PORTFOLIO</li>
-						</a>
-						<a href="https://callmenixsh.github.io/Hajime/index.html" id="projects">
-							<li>PROJECTS</li>
-						</a>
-						<a href="../Contact/contact.html" id="contact">
-							<li>CONTACT</li>
-						</a>
+						<a href="../About/about.html" id="about"><li>ABOUT</li></a>
+						<a href="../Portfolio/portfolio.html" id="portfolio"
+							><li>PORTFOLIO</li></a
+						>
+						<a
+							href="https://callmenixsh.github.io/Hajime/index.html"
+							id="projects"
+							><li>PROJECTS</li></a
+						>
+						<a href="../Contact/contact.html" id="contact"><li>CONTACT</li></a>
 					</ul>
-					
 				</div>
 			</div>
-				<div class="sidebar-container">
-					<h1 class="menu-toggle">☰</h1>
-					<div id="sidebar">
-						<h1>Welcome to my portfolio!</h1>
-						<p id="desc">
-
-							Discover my skills, learn more about me, and explore my full portfolio. You can view a comprehensive list of all my projects, find my contact information, download my resume, and connect with me on social media. Check out my DSA profiles and see the breadth of my expertise in coding and development.
-						</p>
-						<nav class="socials">
-							<h3>MY SOCIALS</h3>
-							<ul>
-								<li>
-									<a href="https://github.com/callmenixsh" target="_blank"
-									><img id="github" src="../1images/github.png"
-									/></a>
-								</li>
-								<li>
-									<a href="https://linkedin.com/in/callmenixsh" target="_blank"
-									><img id="linkedin" src="../1images/linkedin.png"
-									/></a>
-								</li>
-								<li>
-									<a href="https://x.com/callmenixsh" target="_blank"
-									><img id="twitter" src="../1images/x.png"
-									/></a>
-								</li>
-								<li>
-									<a href="https://instagram.com/callmenixsh" target="_blank"
-									><img id="instagram" src="../1images/instagram.png"
-									/></a>
-								</li>
-							</ul>
-							<h3>
-								I log my major portfolio updates here <a href="../Logs/logs.html"><p  id="lawg">LOGS</p></a>
-							</h3>
-							<div id="Declare">* I built this site myself purely from scratch  *</div>
-							<div id="buggy"> <br> The site is under development and may contain bugs !!<br>
-								If you find any please report at any of my socials </div>
-						</nav>
-					</div>
-				</div>
 		</header>
 
 		<!-- content -->
-
 		<main>
 			<div id="maintainance">
 				<h1>!!! - Website is under Construction - !!!</h1>
@@ -103,58 +120,98 @@
 		</main>
 
 		<!-- footer stuff -->
-
 		<footer class="footer">
 			<div onclick="scrollToTop()" id="scrollToTopBtn">
 				<img src="../1images/top.png" alt="Back to top button" />
 			</div>
-			<div class="footer-content">
+			<div class="footer-content txtshadow">
 				<div class="footer-col">
-					<h3>Quick Links</h3>
-					<ul class="links-grid">
-						<li class="links"><a href="https://callmenixsh.github.io/callmenixsh/index.html">Home</a></li>
-						<li class="links"><a href="https://callmenixsh.github.io/callmenixsh/About/about.html">About</a></li>
-						<li class="links"><a href="https://callmenixsh.github.io/callmenixsh/Logs/logs.html">Logs</a></li>
-						<li class="links"><a href="https://callmenixsh.github.io/callmenixsh/Contact/contact.html">Contact</a></li>
-						<li class="links"><a href="https://callmenixsh.github.io/callmenixsh/Portfolio/portfolio.html">Portfolio</a></li>
-						<li class="links"><a href="https://callmenixsh.github.io/Hajime/index.html">Projects</a></li>
-						<li class="links"><a href="https://callmenixsh.github.io/callmenixsh/Portfolio/portfolio.html">Profiles</a></li>
-						<li class="links"><a href="https://callmenixsh.github.io/callmenixsh/Resources/resources.html">Resources</a></li>
-					</ul>
+					<div class="links-flex">
+						<div class="footerhead">QUICK LINKS</div>
+
+						<ul class="links-grid">
+							<li class="links">
+								<a href="https://callmenixsh.github.io/callmenixsh/index.html"
+									>Home</a
+								>
+							</li>
+							<li class="links">
+								<a
+									href="https://callmenixsh.github.io/callmenixsh/About/about.html"
+									>About</a
+								>
+							</li>
+							<li class="links">
+								<a
+									href="https://callmenixsh.github.io/callmenixsh/Logs/logs.html"
+									>Logs</a
+								>
+							</li>
+							<li class="links">
+								<a
+									href="https://callmenixsh.github.io/callmenixsh/Contact/contact.html"
+									>Contact</a
+								>
+							</li>
+							<li class="links">
+								<a
+									href="https://callmenixsh.github.io/callmenixsh/Portfolio/portfolio.html"
+									>Portfolio</a
+								>
+							</li>
+							<li class="links">
+								<a href="https://callmenixsh.github.io/Hajime/index.html"
+									>Projects</a
+								>
+							</li>
+							<li class="links">
+								<a
+									href="https://callmenixsh.github.io/callmenixsh/Portfolio/portfolio.html"
+									>Profiles</a
+								>
+							</li>
+							<li class="links">
+								<a
+									href="https://callmenixsh.github.io/callmenixsh/Resources/resources.html"
+									>Resources</a
+								>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="footer-col">
-					<h3>Contact</h3>
+				<div id="socialz" class="footer-col">
+					<div class="footerhead txtshadow">CONTACT</div>
+					<a href="mailto:callmenixsh@example.com">callmenixsh@gmail.com</a>
 					<ul>
 						<li>
-							Email:
-							<a href="mailto:callmenixsh@example.com">callmenixsh@gmail.com</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer-col">
-					<h3>Socials</h3>
-					<ul class="social-links">
-						<li>
-							<a href="https://instagram.com/callmenixsh" target="_blank"
-								>Instagram</a
-							>
+							<a href="https://github.com/callmenixsh" target="_blank"
+								><img id="github" src="../1images/github.png"
+							/></a>
 						</li>
 						<li>
 							<a href="https://linkedin.com/in/callmenixsh" target="_blank"
-								>LinkedIn</a
-							>
+								><img id="linkedin" src="../1images/linkedin.png"
+							/></a>
 						</li>
 						<li>
-							<a href="https://x.com/callmenixsh" target="_blank">Twitter</a>
+							<a href="https://x.com/callmenixsh" target="_blank"
+								><img id="twitter" src="../1images/x.png"
+							/></a>
+						</li>
+						<li>
+							<a href="https://instagram.com/callmenixsh" target="_blank"
+								><img id="instagram" src="../1images/instagram.png"
+							/></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="footer-bottom">
+				<img id="dalogo" src="../1images/logo.png" />
 				<p>&copy; 2024 callmenixsh. All rights reserved.</p>
 			</div>
 		</footer>
-		<script src="../top.js"></script>
-		<script src="../zoom.js"></script>
+		<script src="../base.js"></script>
+		<script src="./logs.js"></script>
 	</body>
 </html>

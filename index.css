@@ -101,13 +101,12 @@
 
 .navbtn img {
 	width: auto;
-	height: 40px;
+	height: 30px;
 	transition: filter 0.5s;
 }
 
 .navbtn:hover img {
 	width: auto;
-	height: 40px;
 	filter: hue-rotate(180deg) saturate(3) brightness(0.6) invert();
 	transition: filter 0.5s;
 }
@@ -164,7 +163,7 @@
 	align-items: center;
 	height: 900px;
 	box-shadow: 0px 5px black;
-	overflow: hidden;
+	/* overflow: hidden; */
 	min-width: 90%;
 }
 
@@ -186,15 +185,15 @@
 	width: 80%;
 	padding: 20px;
 	gap: 20px;
-	transition: all .25s;
+	transition: all 0.25s;
 }
 
-.secondcontainer:hover{
+.secondcontainer:hover {
 	transform: scale(1.01);
-	transition: all .25s;
+	transition: all 0.25s;
 }
 
-#abouticon{
+#abouticon {
 	width: 500px;
 }
 
@@ -205,7 +204,7 @@
 	filter: drop-shadow(0px 0px 1px rgb(0, 0, 0));
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
-	background-color: rgba(189, 251, 255, 0.541);
+	background-color: rgba(135, 197, 248, 0.541);
 	padding: 10px;
 	border-radius: 20%;
 }
@@ -224,13 +223,21 @@
 .sbtn {
 	width: auto;
 	background-color: #1b7dd9;
-	border: rgb(5, 66, 232) 2px solid;
+	border: rgb(0, 247, 255) 2px solid;
 }
 
 .down {
 	position: absolute;
 	display: flex;
+	flex-direction: column;
 	bottom: 20px;
+	color: black;
+	align-items: center;
+}
+
+#scrollToProfile{
+	height: auto;
+	width: 75px;
 }
 
 /* responsive second */
@@ -243,7 +250,7 @@
 		height: 80%;
 	}
 
-	#abouthead{
+	#abouthead {
 		display: none;
 	}
 
@@ -260,11 +267,8 @@
 		border: none;
 	}
 
-	#abouticon img{
-		
-	width: 100%;
-	height: 100%;
+	#abouticon img {
+		width: 100%;
+		height: 100%;
 	}
 }
-
-
