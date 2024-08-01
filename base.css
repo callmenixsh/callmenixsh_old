@@ -47,6 +47,7 @@ table {
 .heading{
 	font-size: 30px;
 	padding-bottom: 50px;
+	padding-top: 50px;
 }
 
 .teal {
@@ -123,7 +124,7 @@ main {
 .navbar {
 	margin: 0 40px;
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
 	gap: 10px;
 	flex: 1;
@@ -329,12 +330,11 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 70%;
+	width: 60%;
 }
 
 .pages ul {
 	display: flex;
-	padding-inline-start: 0px;
 }
 
 .pages ul li {
@@ -342,7 +342,7 @@ main {
 	cursor: pointer;
 	display: flex;
 	align-items: center;
-	padding: 0 10px;
+	padding: 0 7px;
 	height: 70px;
 	position: relative;
 }
@@ -543,11 +543,15 @@ main {
 	}
 
 	#menu a{
-		padding: 0em;
+		font-size: 13px;
+		padding: unset;
+	}
+
+	.name-container{
+		height: 20px;
 	}
 
 	.navbar {
-		display: flex;
 		width: 100%;
 	}
 
@@ -570,6 +574,7 @@ main {
 
 	.pages ul li{
 		height: 30px;
+		font-size: 12px;
 	}
 
 	.footer{
@@ -597,17 +602,20 @@ main {
 
 /* maintanence */
 #maintainance {
+	margin: 50px;
+	background-color: rgba(0, 0, 0, 0.395);
+	padding: 40px;
+	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: rgb(136, 136, 68);
-	height: 900px;
+	color: rgb(0, 255, 221);
 	font-size: 2rem;
 }
 
 #maintainance img {
-	height: 400px;
+	width: 200px;
 }
 
 
